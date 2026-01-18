@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -13,32 +14,29 @@ const App: React.FC = () => {
   const [isAdminMode, setAdminMode] = useState(false);
   const [lastSaved, setLastSaved] = useState<Date | null>(null);
 
+  // PRODUCTION CACHE SYNC: 
+  // This ensures that old 'Enquire' data in localStorage is cleared 
+  // when you deploy this new 'Inquire' version.
   useEffect(() => {
-    const CURRENT_VERSION = 'gem_v2.5_stable';
+    const CURRENT_VERSION = 'gem_v2.5_inquire_sync';
     const savedVersion = localStorage.getItem('gem_app_version');
     
     if (savedVersion !== CURRENT_VERSION) {
-      localStorage.clear();
+      localStorage.clear(); // Clear old 'Enquire' typos from cache
       localStorage.setItem('gem_app_version', CURRENT_VERSION);
       localStorage.setItem('gem_persistence_v3', JSON.stringify(initialContent));
-      window.location.reload();
+      window.location.reload(); // Reload to apply fresh hard-coded content
     }
 
     const saved = localStorage.getItem('gem_persistence_v3');
     if (saved) {
-      try {
-        setContent(JSON.parse(saved));
-        setLastSaved(new Date());
-      } catch (e) {
-        console.error('Failed to parse saved content:', e);
-        setContent(initialContent);
-      }
+      setContent(JSON.parse(saved));
+      setLastSaved(new Date());
     }
   }, []);
 
   const handleUpdate = (newContent: any) => {
     setContent(newContent);
-    localStorage.setItem('gem_persistence_v3', JSON.stringify(newContent));
     setLastSaved(new Date());
   };
 
