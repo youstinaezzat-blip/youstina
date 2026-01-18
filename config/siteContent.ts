@@ -15,24 +15,7 @@ export const siteContent = {
   philosophy: {
     badge: "A Once in a Lifetime Promise",
     title: "Not a Service, but an Experience.",
-    mainText: "If you are looking for a partner to manage every minute of your journey, you have landed on the right page. We curate more than 50 years of cumulative team experience to deliver precision-engineered Concierge service events and leisure activities.",
-    cards: [
-      {
-        id: "01",
-        title: "Global Reach",
-        text: "Mastery in managing world-class events across Africa, Europe, and Asia. Boundaries are simply starting points for our concierge team."
-      },
-      {
-        id: "02",
-        title: "Perfect Scalability",
-        text: "Versatile management for groups ranging from intimate private retreats to massive 1,000-member corporate incentives."
-      },
-      {
-        id: "03",
-        title: "Bespoke Detail",
-        text: "From corporate summits to high-end leisure activities, we manage every single detail of your trip, so you only have to focus on the moment."
-      }
-    ]
+    mainText: "If you are looking for a partner to manage every minute of your journey, you have landed on the right page. We curate more than 50 years of cumulative team experience to deliver precision-engineered Concierge service events and leisure activities."
   },
   stickySection: {
     backgroundImage: "https://images.unsplash.com/photo-1539768942893-daf53e448371?auto=format&fit=crop&q=80&w=2000",

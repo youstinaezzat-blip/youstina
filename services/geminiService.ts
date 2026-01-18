@@ -1,7 +1,8 @@
 
 import { GoogleGenAI, Type } from "@google/genai";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || '' });
+// Fix: Initializing GoogleGenAI with process.env.API_KEY directly as required.
+const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 export const getEventSuggestions = async (eventType: string, guestCount: number) => {
   try {
@@ -32,7 +33,10 @@ export const getEventSuggestions = async (eventType: string, guestCount: number)
       }
     });
 
-    return JSON.parse(response.text);
+    // Fix: Using the .text property directly for extracted content.
+    const text = response.text;
+    if (!text) return null;
+    return JSON.parse(text);
   } catch (error) {
     console.error("Gemini API Error:", error);
     return null;
