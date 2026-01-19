@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -7,24 +6,23 @@ import BookingCard from './components/BookingCard';
 import Footer from './components/Footer';
 import AIPlanner from './components/AIPlanner';
 import AdminPanel from './components/AdminPanel';
+import ExperiencePage from './components/ExperiencePage';
 import { siteContent as initialContent } from './config/siteContent';
 
 const App: React.FC = () => {
   const [content, setContent] = useState(initialContent);
   const [isAdminMode, setAdminMode] = useState(false);
   const [lastSaved, setLastSaved] = useState<Date | null>(null);
+  const [currentView, setCurrentView] = useState<'home' | 'experience'>('home');
 
   useEffect(() => {
-    const CURRENT_VERSION = 'gem_v2.6_stable';
+    const CURRENT_VERSION = 'gem_v3.0_video_page';
     const savedVersion = localStorage.getItem('gem_app_version');
     
     if (savedVersion !== CURRENT_VERSION) {
-      // Clear old data safely
       localStorage.clear(); 
       localStorage.setItem('gem_app_version', CURRENT_VERSION);
       localStorage.setItem('gem_persistence_v3', JSON.stringify(initialContent));
-      
-      // We don't reload immediately to prevent potential loops
       setContent(initialContent);
       setLastSaved(new Date());
     } else {
@@ -39,6 +37,18 @@ const App: React.FC = () => {
         }
       }
     }
+
+    // Handle hash navigation for direct links
+    const handleHash = () => {
+      if (window.location.hash === '#experience') {
+        setCurrentView('experience');
+      } else {
+        setCurrentView('home');
+      }
+    };
+    window.addEventListener('hashchange', handleHash);
+    handleHash(); // Initial check
+    return () => window.removeEventListener('hashchange', handleHash);
   }, []);
 
   const handleUpdate = (newContent: any) => {
@@ -53,9 +63,24 @@ const App: React.FC = () => {
     }
   };
 
+  if (currentView === 'experience') {
+    return (
+      <div className="bg-black min-h-screen">
+        <Navbar logoUrl={content.brand.logoUrl} onNavigate={setCurrentView} />
+        <ExperiencePage 
+          videoUrl={content.stickySection.items[0].videoUrl} 
+          title={content.stickySection.items[0].title}
+          description={content.stickySection.items[0].description}
+          onBack={() => setCurrentView('home')}
+        />
+        <Footer logoUrl={content.brand.logoUrl} content={content.footer} />
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen selection:bg-[#c5a059]/30 selection:text-[#c5a059] bg-black">
-      <Navbar logoUrl={content.brand.logoUrl} />
+      <Navbar logoUrl={content.brand.logoUrl} onNavigate={setCurrentView} />
       
       <main>
         <Hero content={content.hero} />
@@ -78,7 +103,9 @@ const App: React.FC = () => {
           </div>
         </section>
 
-        <StickySection content={content.stickySection} />
+        {/* Section 1-3 (Experiences) - Static Images Only Now */}
+        <StickySection content={content.stickySection} startIndex={0} />
+
         <AIPlanner />
         <BookingCard content={content.booking} />
       </main>

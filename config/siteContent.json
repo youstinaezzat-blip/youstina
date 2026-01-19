@@ -38,12 +38,33 @@
       }
     ]
   },
+  "stickySection2": {
+    "backgroundImage": "https://images.unsplash.com/photo-1590076153721-66774697207c?auto=format&fit=crop&q=80&w=2000",
+    "title": "The Gates of Thebes",
+    "items": [
+      {
+        "title": "Karnak Temple Illumination",
+        "location": "Luxor, Egypt",
+        "description": "A private evening at the world's largest religious complex. Experience a bespoke sound and light show curated exclusively for your group, followed by a gala dinner in the Great Hypostyle Hall."
+      },
+      {
+        "title": "Valley of the Kings Access",
+        "location": "West Bank, Luxor",
+        "description": "Gain exclusive access to tombs usually closed to the public. Walk through history with Egypt's leading archaeologists as your private guides."
+      },
+      {
+        "title": "Philae Temple at Dusk",
+        "location": "Aswan, Egypt",
+        "description": "Take a private boat to the island of Philae. As the sun sets over the Nile, enjoy a traditional Nubian performance and a curated tasting menu by the temple columns."
+      }
+    ]
+  },
   "booking": {
     "title": "Let Us Manage The Details",
     "description": "From global logistics to the finest artistic touches, we handle everything. Share your vision and let our decades of experience take the helm.",
     "email": "info@gem-events.com",
-    "phone": "+20122347373",
-    "whatsapp": "20122347373"
+    "phone": "+201222347373",
+    "whatsapp": "201222347373"
   },
   "footer": {
     "description": "Premium Event Management & Global Bespoke Travel Concierge based in Egypt.",
