@@ -1,98 +1,180 @@
 export const siteContent = {
+  seo: {
+    title: "Luxury Event Management, VIP Concierge & Medical Tourism in Egypt | GEM Events",
+    description:
+      "GEM Events delivers bespoke luxury event management, VIP concierge services, corporate retreats, and premium medical tourism experiences in Egypt and worldwide.",
+    keywords: [
+      "luxury event management Egypt",
+      "VIP concierge Egypt",
+      "medical tourism Egypt",
+      "corporate retreats Egypt",
+      "luxury travel Egypt",
+      "exclusive events Egypt"
+    ]
+  },
   brand: {
     name: "GEM Events",
-    tagline: "Global Events Management",
+    tagline: "Luxury Event Management & Concierge",
     logoUrl: "https://drive.google.com/thumbnail?id=1q9p0giYQIHFqcfj1Gb_FU52Me4sL6qZT&sz=w1000",
-    philosophy: "We do not provide a service. We provide an experience.",
-    cumulativeExperience: "50 years of cumulative team experience"
+    philosophy: "We do not provide a service. We craft unforgettable experiences.",
+    cumulativeExperience: "50+ years of combined team expertise in luxury events and concierge services"
   },
   hero: {
-    title: "Gems need a Jeweler",
-    subtitle: "Every masterpiece requires a master's touch. From intimate retreats to grand galas for 1,000+ guests, we polish world-class experiences across Africa, Europe, and Asia.",
-    backgroundImage: "https://images.unsplash.com/photo-1544111325-4a69622d1e28?auto=format&fit=crop&q=80&w=2000"
+    slogan: "Gems need a Jeweler",
+    title: "Luxury Event Management & VIP Concierge in Egypt",
+    subtitle:
+      "From private retreats to grand galas for over 1,000 guests, GEM Events curates extraordinary luxury experiences across Egypt, Africa, Europe, and Asia.",
+    backgroundImage:
+      "https://images.unsplash.com/photo-1544111325-4a69622d1e28?auto=format&fit=crop&q=80&w=2000"
   },
   philosophy: {
     badge: "The Art of Distinction",
-    title: "An Experience, Not Just a Service.",
-    mainText: "For those who demand precision and soul in equal measure. We leverage five decades of combined expertise to curate bespoke concierge journeys and world-class event productions."
+    title: "More Than a Service — A Curated Experience",
+    mainText:
+      "GEM Events is a luxury event management and concierge company dedicated to creating unforgettable experiences. With five decades of combined expertise, our team designs bespoke events, exclusive travel experiences, corporate retreats, and medical tourism journeys for clients who expect nothing less than perfection."
   },
+  services: [
+    {
+      title: "Luxury Event Management",
+      description:
+        "Bespoke luxury event planning in Egypt including corporate galas, private celebrations, VIP receptions, product launches, and exclusive destination events at iconic locations such as the Pyramids of Giza and the Nile River."
+    },
+    {
+      title: "VIP Concierge Services",
+      description:
+        "Our elite concierge services provide personalized travel planning, private tours, luxury transportation, yacht charters, and exclusive access experiences across Egypt and worldwide."
+    },
+    {
+      title: "Medical Tourism in Egypt",
+      description:
+        "GEM Events connects international guests with Egypt's leading surgeons, hospitals, and medical specialists while organizing luxury accommodation, concierge services, and recovery experiences."
+    },
+    {
+      title: "Corporate Retreats",
+      description:
+        "High-end corporate retreats designed to inspire leadership, innovation, and collaboration. We combine business excellence with luxury hospitality in Egypt’s most breathtaking destinations."
+    }
+  ],
+  destinations: [
+    "Pyramids of Giza",
+    "Nile River Cruises",
+    "Red Sea Resorts",
+    "Luxor Temples",
+    "Grand Egyptian Museum"
+  ],
   stickySection: {
-    backgroundImage: "https://images.unsplash.com/photo-1539768942893-daf53e448371?auto=format&fit=crop&q=80&w=2000",
+    backgroundImage:
+      "https://images.unsplash.com/photo-1539768942893-daf53e448371?auto=format&fit=crop&q=80&w=2000",
     title: "Egypt: The Unrivaled Collection",
     items: [
       {
-        title: "The Great Pyramids",
+        title: "The Great Pyramids Experience",
         location: "Giza Plateau",
-        description: "Behold the last standing Wonder of the Ancient World. Enjoy a private sunrise breakfast overlooking the pyramids, followed by a VIP walkthrough of the Grand Egyptian Museum (GEM) with a premier Egyptologist.",
-        videoUrl: "https://drive.google.com/file/d/1rORi-nXbW-TyyczsJ0OtUP6iuJyx5k1d/preview"
+        description:
+          "Witness the last standing Wonder of the Ancient World. Enjoy a private sunrise breakfast overlooking the Pyramids followed by an exclusive guided experience at the Grand Egyptian Museum.",
+        videoUrl:
+          "https://drive.google.com/file/d/1rORi-nXbW-TyyczsJ0OtUP6iuJyx5k1d/preview"
       },
       {
-        title: "Nile Sophistication",
+        title: "Luxury Nile Sophistication",
         location: "Luxor & Aswan",
-        description: "Charter a private luxury Dahabiya and navigate the timeless pulse of Egypt. Savor sunset cocktails on the deck and candlelit dinners amidst the ruins of ancient temples.",
-        videoUrl: "https://drive.google.com/file/d/1ajtESO9YjMQEvXSPFrU-50gMmC1OHBui/preview"
+        description:
+          "Charter a private Dahabiya and sail along the timeless Nile River. Experience sunset cocktails, candlelit dinners, and private tours of Egypt's ancient temples.",
+        videoUrl:
+          "https://drive.google.com/file/d/1ajtESO9YjMQEvXSPFrU-50gMmC1OHBui/preview"
       },
       {
-        title: "The Emerald Red Sea",
+        title: "Red Sea Luxury Escape",
         location: "Hurghada & Beyond",
-        description: "Bask in the absolute luxury of the Red Sea. From over-water bungalows to private yacht expeditions, experience the pristine waters of Egypt in total seclusion.",
-        videoUrl: "https://drive.google.com/file/d/1QopSAqhBd2xcrpwgRVUvWIbvo0vBhoDf/preview"
+        description:
+          "Experience the pristine waters of the Red Sea through private yacht charters, luxury resorts, and exclusive island experiences.",
+        videoUrl:
+          "https://drive.google.com/file/d/1QopSAqhBd2xcrpwgRVUvWIbvo0vBhoDf/preview"
       }
     ]
   },
   stickySection2: {
-    backgroundImage: "https://images.unsplash.com/photo-1590076153721-66774697207c?auto=format&fit=crop&q=80&w=2000",
+    backgroundImage:
+      "https://images.unsplash.com/photo-1590076153721-66774697207c?auto=format&fit=crop&q=80&w=2000",
     title: "The Gates of Thebes",
     items: [
       {
-        title: "Karnak Illumination",
+        title: "Karnak Temple Illumination",
         location: "Luxor, Upper Egypt",
-        description: "An exclusive evening at the world's largest religious complex. Witness a private sound and light spectacle designed solely for your party, followed by a gala under the stars.",
-        videoUrl: "https://drive.google.com/file/d/1sDljDlNidF-VItwm-iavy-miGWHY2gMP/preview"
+        description:
+          "Host a private evening inside the world's largest temple complex with a personalized sound and light show followed by a luxury gala under the stars.",
+        videoUrl:
+          "https://drive.google.com/file/d/1sDljDlNidF-VItwm-iavy-miGWHY2gMP/preview"
       },
       {
         title: "The King's Passage",
         location: "Valley of the Kings",
-        description: "Descend into history with private after-hours access to the most sacred tombs. Walk the silent halls of pharaohs accompanied by world-renowned archaeological experts."
+        description:
+          "Explore the sacred tombs of pharaohs with exclusive after-hours access guided by renowned Egyptologists."
       }
     ]
   },
   globalExperience: {
-    title: "Global Mastery",
-    subtitle: "Transcending borders to deliver excellence. Our legacy of event management spans continents, bringing Egyptian hospitality to the world stage.",
-    videoUrl: "https://drive.google.com/file/d/1saZgWknroLUGYQxnzPkSGeCi4qWLnX61/preview"
+    title: "Global Event Mastery",
+    subtitle:
+      "Delivering world-class events beyond borders. Our legacy of luxury event management spans continents while bringing Egyptian hospitality to the global stage.",
+    videoUrl:
+      "https://drive.google.com/file/d/1saZgWknroLUGYQxnzPkSGeCi4qWLnX61/preview"
   },
   concierge: {
-    title: "Premier Concierge Services",
+    title: "Premier Luxury Concierge Services",
     pillars: [
       {
-        title: "The Royal Arrival",
-        description: "Your journey begins at the gate. We provide elite Meet & Greet services with fast-tracked diplomatic entry, ensuring your transition into Egypt is as seamless as it is prestigious."
+        title: "Elite Airport Arrival",
+        description:
+          "Enjoy fast-track VIP airport assistance with exclusive Meet & Greet services ensuring a seamless and prestigious arrival into Egypt."
       },
       {
-        title: "VIP Access & Hidden Gems",
-        description: "Behind the velvet rope. From private dinners inside historic monuments to masterclasses with local artisans, we unlock the inaccessible for the discerning traveler."
+        title: "Exclusive Access Experiences",
+        description:
+          "From private dinners inside historic monuments to cultural masterclasses with local artisans, we unlock the most exclusive experiences Egypt has to offer."
       },
       {
         title: "Medical & Aesthetic Concierge",
-        description: "Rooted in the pharmaceutical and medical elite, we offer a trusted gateway to Egypt's top surgeons and specialists. Experience world-class care in absolute privacy."
+        description:
+          "Through our network of top surgeons and specialists, we provide a trusted gateway to world-class medical treatments combined with luxury hospitality."
       },
       {
-        title: "Sanctuary for the Soul",
-        description: "Reconnect with the divine. We curate immersive spiritual experiences, energy healing, and meditation sessions in the world's most ancient and powerful energy centers."
+        title: "Spiritual & Wellness Journeys",
+        description:
+          "Reconnect with ancient wisdom through curated meditation, wellness retreats, and spiritual experiences in Egypt’s most powerful historical locations."
       }
     ]
   },
+  faq: [
+    {
+      question: "What services does GEM Events provide?",
+      answer:
+        "GEM Events specializes in luxury event management, VIP concierge services, corporate retreats, and premium medical tourism experiences in Egypt."
+    },
+    {
+      question: "Why choose Egypt for luxury events?",
+      answer:
+        "Egypt offers iconic historical venues, world-class resorts, and unique cultural experiences making it one of the most extraordinary destinations for luxury events."
+    },
+    {
+      question: "What is medical tourism in Egypt?",
+      answer:
+        "Medical tourism allows international patients to travel to Egypt for high-quality medical treatments combined with luxury accommodation and concierge services."
+    }
+  ],
   booking: {
-    title: "Command the Extraordinary",
-    description: "Leave the orchestration to us. From global logistics to the finest artistic nuances, we handle the complexity so you can enjoy the clarity.",
+    title: "Plan Your Extraordinary Experience",
+    description:
+      "Contact GEM Events to design your luxury event, VIP concierge journey, or medical tourism experience in Egypt. Our team manages every detail from concept to execution.",
     email: "info@gem-events.com",
     phone: "+20 122 234 7373",
     whatsapp: "201222347373"
   },
   footer: {
-    description: "Global Events Management & Bespoke Travel Concierge. Defined by detail, driven by passion.",
-    copyright: "2024 GEM Events. All Rights Reserved.",
+    description:
+      "Luxury Event Management, VIP Concierge Services & Bespoke Travel Experiences in Egypt.",
+    copyright: "2026 GEM Events. All Rights Reserved.",
     instagram: "globaleventsmanagment",
     facebook: "global events management"
   }
