@@ -1,6 +1,6 @@
 export const siteContent = {
   seo: {
-    title: "Luxury Event Management, VIP Concierge & Medical Tourism in Egypt | GEM Events",
+    title: "GEMs Need a Jeweler",
     description:
       "GEM Events delivers bespoke luxury event management, VIP concierge services, corporate retreats, and premium medical tourism experiences in Egypt and worldwide.",
     keywords: [
